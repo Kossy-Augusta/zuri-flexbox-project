@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors
+
+Primary */
+  --card1-color: hsl(31, 77%, 52%);
+  --card2-color: hsl(184, 100%, 22%);
+  --card3-color: hsl(179, 100%, 13%);
+
+  /* Neutral */
+
+  /* paragraph */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+
+  /* background, headings, buttons */
+  --grey: hsl(0, 0%, 95%) /* FONT */ @import
+    url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexand+Deca&display=swap");
+  /* body font */
+  --bodyFont: "Lexend Deca", sans-serif;
+  --headingFont: "Big Shoulders Display";
+  /* others */
+  --radius: 0.5rem;
+}
+
+body {
+  font-size: 15px;
+  font: var(--bodyFont);
+}
+h1,
+h2 {
+  font-family: var(--bodyFont);
+  text-transform: uppercase;
+  color: var(--transparent-white);
+}
+p {
+  color: var(--transparent-white);
+  font-family: var(--headingFont);
+  font-size: 15px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  text-transform: capitalize;
+  background: var(--transparent-white);
+  color: var(--card2-color);
+  border-color: transparent;
+  font-size: 15px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* cards */
+.cards {
+  padding:0.8rem 1rem;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+.card {
+  height: 25rem;
+  padding: 0.8rem 1rem;
+
+
+}
+.card-1 {
+  background: var(--card1-color);
+}
+
+.card-2 {
+  background: var(--card2-color);
+}
+.card-3 {
+  background: var(--card3-color);
+}
+.icon-container {
+  width: 2.5rem;
+  margin-bottom: 2rem;
+}
+.card-title {
+  margin-bottom: 2rem;
+;
+}
+.card-text {
+  max-width: 20rem;
+  margin-bottom: 4rem;
+}
